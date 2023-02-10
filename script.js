@@ -8,13 +8,13 @@ import { motion } from "https://cdn.skypack.dev/framer-motion@4.1.17";
 import cx from "https://cdn.skypack.dev/classnames@2.3.1";
 
 const slides = [
-  "/src/國中社會7上課本.jpg",
-  "/src/國中科技8上課本.jpg",
-  "/src/國中國文7上課本.jpg",
-  "/src/國中綜合8上課本.jpg",
-  "/src/國中數學7上課本.jpg",
-"/src/國中自然7上課本.jpg",
-"/src/國中健體8上課本.jpg",
+  "./src/國中社會7上課本.jpg",
+  "./src/國中科技8上課本.jpg",
+  "./src/國中國文7上課本.jpg",
+  "./src/國中綜合8上課本.jpg",
+  "./src/國中數學7上課本.jpg",
+"./src/國中自然7上課本.jpg",
+"./src/國中健體8上課本.jpg",
 ];
 
 

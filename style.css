@@ -319,7 +319,7 @@ li{
   min-height: 100vh;
   margin-left: 230px;
   padding: 100px 60px;
-  background-image: url('/src/Grid.png');
+  background-image: url('./src/Grid.png');
   background-size: 100% auto;
   background-position: 0 0 ;
   position: relative;
@@ -395,7 +395,7 @@ li{
 
 .textbook::after{
   content: "";
-  background-image: url('/src/textbook-bg-ch.png');
+  background-image: url('./src/textbook-bg-ch.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
