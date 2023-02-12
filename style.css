@@ -1,4 +1,162 @@
+:root{
+  --chinese: #488A68;
+  --math: #b07e12;
+  --english: #7f2323;
+  --science: #90B035;
+  --society: #58A3FF;
+  --technology: #2e5fb4;
+  --comprehensive: #d34180;
+  --healthandsports: #42a7d2;
+  --digital: #A51AB7;
+  --chinese-light: #75BDC4;
+  --math-light: #f7de83;
+  --english-light: #e8c8c8;
+  --science-light: #C6DF80;
+  --society-light: #C1D6FF;
+  --technology-light: #7AA1E4;
+  --comprehensive-light: #ffd9e8;
+  --healthandsports-light: #B6E8FD;
+  --digital-light: #D698DE;
+  --bg-light: #fff8e8;
+}
 
+.chinese [class$="-item"] .heading3,
+.chinese .p-item .cover::after{
+ background: var(--chinese-light);
+}
+.chinese .sidebar,
+.chinese .s-button.active,
+.chinese .s-button:hover{
+  background: var(--chinese);
+}
+.chinese .textbook::after{
+  background-image: url('./src/textbook/textbook-bg-ch.png');
+}
+.chinese .textbook::before{
+  content: "南一國文教材簡介本";
+}
+
+.math [class$="-item"] .heading3,
+.math .p-item .cover::after{
+ background: var(--math-light);
+}
+.math .sidebar,
+.math .s-button.active,
+.math .s-button:hover{
+  background: var(--math);
+}
+.math .textbook::after{
+  background-image: url('./src/textbook/textbook-bg-math.png');
+}
+.math .textbook::before{
+  content: "南一數學教材簡介本";
+}
+.english [class$="-item"] .heading3,
+.english .p-item .cover::after{
+ background: var(--english-light);
+}
+.english .sidebar,
+.english .s-button.active,
+.english .s-button:hover{
+  background: var(--english);
+}
+.english .textbook::after{
+  background-image: url('./src/textbook/textbook-bg-eng.png');
+}
+.english .textbook::before{
+  content: "南一英文教材簡介本";
+}
+.science [class$="-item"] .heading3,
+.science .p-item .cover::after{
+ background: var(--science-light);
+}
+.science .sidebar,
+.science .s-button.active,
+.science .s-button:hover{
+  background: var(--science);
+}
+.science .textbook::after{
+  background-image: url('./src/textbook/textbook-bg-sci.png');
+}
+.science .textbook::before{
+  content: "南一自然教材簡介本";
+}
+.society [class$="-item"] .heading3,
+.society .p-item .cover::after{
+ background: var(--society-light);
+}
+.society .sidebar,
+.society .s-button.active,
+.society .s-button:hover{
+  background: var(--society);
+}
+.society .textbook::after{
+  background-image: url('./src/textbook/textbook-bg-soc.png');
+}
+.society .textbook::before{
+  content: "南一社會教材簡介本";
+}
+.technology [class$="-item"] .heading3,
+.technology .p-item .cover::after{
+ background: var(--technology-light);
+}
+.technology .sidebar,
+.technology .s-button.active,
+.technology .s-button:hover{
+  background: var(--technology);
+}
+.technology .textbook::after{
+  background-image: url('./src/textbook/textbook-bg-tech.png');
+}
+.technology .textbook::before{
+  content: "南一科技教材簡介本";
+}
+.comprehensive [class$="-item"] .heading3,
+.comprehensive .p-item .cover::after{
+ background: var(--comprehensive-light);
+}
+.comprehensive .sidebar,
+.comprehensive .s-button.active,
+.comprehensive .s-button:hover{
+  background: var(--comprehensive);
+}
+
+.comprehensive .textbook::after{
+  background-image: url('./src/textbook/textbook-bg-com.png');
+}
+.comprehensive .textbook::before{
+  content: "南一綜合教材簡介本";
+}
+.healthandsports [class$="-item"] .heading3,
+.healthandsports .p-item .cover::after{
+ background: var(--healthandsports-light);
+}
+.healthandsports .sidebar,
+.healthandsports .s-button.active,
+.healthandsports .s-button:hover{
+  background: var(--healthandsports);
+}
+.healthandsports .textbook::after{
+  background-image: url('./src/textbook/textbook-bg-hs.png');
+}
+.healthandsports .textbook::before{
+  content: "南一健體教材簡介本";
+}
+.digital [class$="-item"] .heading3,
+.digital .p-item .cover::after{
+ background: var(--digital-light);
+}
+.digital .sidebar,
+.digital .s-button.active,
+.digital .s-button:hover{
+  background: var(--digital);
+}
+.digital .textbook::after{
+  background-image: url('./src/textbook/textbook-bg-.png');
+}
+.digital .textbook::before{
+  content: "南一數位教材簡介本";
+}
 *{
   margin: 0;
   padding: 0;
@@ -271,9 +429,9 @@ li{
   padding-top: 50px;
   width: 230px;
   height: 100vh;
-  background: #488A68;
   text-align: center;
 }
+
 
 .sidebar .logo{
   width: 180px;
@@ -366,7 +524,7 @@ li{
   gap: 60px;
 }
 .textbook{
-
+  max-width: 900px;
   height: 450px;
   gap: 50px;
   margin-top: 60px;
@@ -395,7 +553,7 @@ li{
 
 .textbook::after{
   content: "";
-  background-image: url('./src/textbook-bg-ch.png');
+  /* background-image: url('./src/textbook-bg-ch.png'); */
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -444,7 +602,7 @@ li{
   width: 100%;
   height: calc(100% - 10px);
   
-  background: #FFF1D6;
+  background: var(--bg-light);
   border: 1px solid #000000;
   z-index: -99;
 
@@ -454,7 +612,7 @@ li{
   left: 10px;
   z-index: -100;
   
-  background: #75BDC4;
+  /* background: #75BDC4; */
 
 
 }
@@ -465,30 +623,10 @@ li{
   top: -20px;
 }
 
-.s-button{
-  position: absolute;
-  top: 65px;
-  right: 65px;
-  width: 90px;
-  height: 90px;
-  background: #488A68;
-  border: 2px solid #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
-  font-weight: 900;
-  font-size: 30px;
-  line-height: 43px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  color: #FFFFFF;
-
-}
 
 @media screen and (max-width: 768px) {
-  .s-button{
+  .s-button:hover{
     top: 45px;
     right: 45px;
     width: 80px;
@@ -497,7 +635,7 @@ li{
   }
 }
 @media screen and (max-width: 560px) {
-  .s-button{
+  .s-button:hover{
     top: 30px;
     right: 30px;
     width: 50px;
@@ -522,7 +660,7 @@ li{
 
 /* Reason */
 [class$="-item"] .heading3{
-  background: #A1C2B1;
+  /* background: #A1C2B1; */
 border: 1px solid #000000;
 padding: 10px 40px;
 
@@ -549,7 +687,7 @@ padding: 10px 40px;
 }
 .m-item .content,
 .f-item .content{
-  background: #E9F7F0;
+  background: var(--bg-light);
   border: 1px solid #000000;
   
 }
@@ -558,3 +696,45 @@ padding: 10px 40px;
   max-width: 50%;
 }
 
+
+/* s-buttonList */
+.s-buttonList{
+  position: absolute;
+  top: 65px;
+  right: 65px;
+  grid-template-columns: repeat(1, 1fr);
+  background: #488A68;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  transition: all .3s;
+  transform-origin: top right ;
+   
+  
+}
+.s-buttonList:hover{
+  height: 438px;
+}
+
+.s-button{
+
+  cursor: pointer;
+  /* border-radius: 4px; */
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 43px;
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #FFFFFF;
+
+}
+.s-button.active{
+  width: 90px;
+  height: 90px;
+grid-area: 1 / 1;
+}
