@@ -15,7 +15,7 @@ const pageChange = (e, page) => {
     <div class="sidebar">
         <img class="logo" src="/logo-white.png" alt="">
         <nav class="flex column">
-            <a class="nav-link" href="/"><i class="fa-solid fa-house"></i> 首頁</a>
+            <a class="nav-link" href="../"><i class="fa-solid fa-house"></i> 首頁</a>
             <router-link class="nav-link" to="/chinese/textbook"><i class="fa-solid fa-book"></i>教材簡介本</router-link>
             <router-link class="nav-link" to="/chinese/pdf"><i class="fa-solid fa-file"></i>樣書PDF</router-link>
             <router-link class="nav-link" to="/chinese/video"><i class="fa-solid fa-play"></i>說明會影片</router-link>
