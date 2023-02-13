@@ -189,16 +189,8 @@
     font-size: 85%;
   }
 }
-@media screen and (max-width: 560px) {
-  :root{
-    font-size: 75%;
-  }
-}
-@media screen and (max-width: 450px) {
-  :root{
-    font-size: 60%;
-  }
-}
+
+
 
 .flex{
   display: flex;
@@ -264,6 +256,12 @@
   width: 100px;
   height: auto;
 
+}
+
+@media screen and (max-width: 768px) {
+  .mb-none{
+    display: none;
+  }
 }
 
 h1{
@@ -469,6 +467,10 @@ li{
   .sidebar.active{
     left: 0;
   }
+
+  .sidebar .logo{
+    margin-bottom: 20px;
+  }
 }
 @media screen and (min-width: 1261px) {
   .menu{
@@ -540,6 +542,12 @@ li{
     padding: 50px 30px;
   }
 }
+@media screen and (max-width: 540px) {
+  .mainBlock{
+
+    padding: 15px;
+  }
+}
 
 .heading1{
   font-size: 3rem;
@@ -569,7 +577,7 @@ li{
   max-width: 900px;
   height: 450px;
   gap: 50px;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
   padding: 10px 100px 0;
   position: relative;
 }
@@ -808,6 +816,8 @@ padding: 10px 40px;
    
   
 }
+
+
 .s-buttonList:hover{
   height: 438px;
 }
@@ -832,4 +842,20 @@ padding: 10px 40px;
   height: 90px;
 grid-area: 1 / 1;
 pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+  .s-buttonList{
+    right: 20px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  .s-button{
+    font-size: 16px;
+  }
+  .s-button.active{
+    width: 45px;
+    height: 45px;
+  }
 }
