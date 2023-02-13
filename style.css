@@ -408,12 +408,14 @@ li{
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 5px 15px;
   border: 1px solid #525252;
   word-break: keep-all;
+  
+}
+.sbjList li a{
+  padding: 5px 15px;
 
 }
-
 .s-btn:hover{
   border: 1px solid #FF6666;
   color: #fff;

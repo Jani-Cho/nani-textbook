@@ -14,10 +14,10 @@
         </div>
                 <div class="s-buttonList grid">
 
-            <a class="s-button " href="/chinese/textbook.html">
+            <a class="s-button " href="../chinese/textbook.html">
                 國文 
             </a>
-            <a class="s-button" href="/english/textbook.html">
+            <a class="s-button" href="../english/textbook.html">
                 英文 
             </a>
             <a class="s-button active" href="/math/textbook.html">
