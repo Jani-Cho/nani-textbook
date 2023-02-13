@@ -12,6 +12,10 @@ const pageChange = (e, page) => {
 </script>
 
 <template>
+        <div class="menu flex j-c a-c">
+
+        <img  src="../src/menu.png" alt="">
+    </div>
     <div class="sidebar">
         <img class="logo" src="/logo-white.png" alt="">
         <nav class="flex column">
