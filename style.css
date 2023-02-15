@@ -278,7 +278,11 @@ h1{
 p{
   font-size: 1.5rem;
   line-height: 2.125rem;
-  /* margin-bottom: 20px; */
+}
+
+.content p{
+  margin-bottom: 20px;
+
 }
 
 a{
@@ -554,7 +558,7 @@ li{
   .mainBlock{
     width: 100vw;
     margin-left: 0;
-    padding:0 30px;
+    padding: 50px 30px;
   }
   .mainBlock .logo{
   width: 200px;
@@ -568,7 +572,8 @@ li{
 @media screen and (max-width: 540px) {
   .mainBlock{
 
-    padding: 15px;
+    padding: 0 15px;
+
   }
 }
 
@@ -899,11 +904,17 @@ padding: 20px 40px;
   border: 1px solid #000000;
   
 }
-
+@media screen and (max-width: 768px) {
+  .m-item .content div,
+  .f-item .content div{
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 769px) {
 .f-item img{
   max-width: 50%;
 }
-
+}
 
 /* s-buttonList */
 .s-buttonList{
@@ -925,7 +936,7 @@ padding: 20px 40px;
 
 
 .s-buttonList:hover{
-  height: 405px;
+  height: 450px;
 }
 
 .s-button{
@@ -954,7 +965,7 @@ padding: 20px 40px;
     height: 75px;
   }
   .s-buttonList:hover{
-    height: 675px;
+    height: 405px;
   }
   .s-button.active{
     width: 75px;
