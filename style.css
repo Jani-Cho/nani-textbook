@@ -183,11 +183,7 @@
   color: #0E173D;
 }
 
-@media screen and (max-width: 1260px) {
-  :root{
-    font-size: 95%;
-  }
-}
+
 @media screen and (max-width: 900px) {
   :root{
     font-size: 100%;
@@ -195,7 +191,7 @@
 }
 @media screen and (max-width: 768px) {
   :root{
-    font-size: 85%;
+    font-size: 90%;
   }
 }
 
@@ -558,7 +554,7 @@ li{
   .mainBlock{
     width: 100vw;
     margin-left: 0;
-    padding: 50px 30px;
+    padding:0 30px;
   }
   .mainBlock .logo{
   width: 200px;
@@ -591,7 +587,7 @@ li{
 }
 .heading3{
   font-weight: 600;
-  font-size: 1.125rem;
+  font-size: 1.6rem;
   line-height: 29px;
 }
 .title{
@@ -627,6 +623,7 @@ li{
  .title{
     flex-direction: column;
     margin-top: 60px;
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 600px) {
@@ -761,8 +758,14 @@ li{
 }
 }
 .content{
+  padding: 40px;
   font-size: 1.5rem;
   line-height: 2.5rem;
+}
+@media screen and (max-width:960px) {
+  .content{
+    padding: 20px;
+  }
 }
 .textbook ol, .textbook li{
   width: 90%;
@@ -818,7 +821,10 @@ li{
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 540px) {
+  .p-item.pdf img {
+    width: 360px;
+  }
   .s-button:hover{
     top: 45px;
     right: 45px;
@@ -849,24 +855,33 @@ li{
   position: relative;
   top: -20px;
 }
-
+@media screen and (max-width: 540px) {
+  .p-item.video img{
+    max-width: 80%;
+  }
+  .p-item .cover::after, .p-item .cover::before{
+    width: calc(100% + 10px);
+  }
+  .p-item.video .cover::after, .p-item.video .cover::before{
+    width: 85%;
+    left: 7.5%;
+  }
+}
 
 /* Reason */
 [class$="-item"] .heading3{
   /* background: #A1C2B1; */
 border: 1px solid #000000;
-padding: 10px 40px;
+padding: 20px 40px;
 
 }
 
 @media screen and (max-width: 768px) {
   .r-item .heading3{
-    padding:  0 10px ;
+    padding:  10px 15px;
   }
 }
-.content{
-  padding: 40px;
-}
+
 
 @media screen and (max-width: 768px) {
   .r-item .content{
