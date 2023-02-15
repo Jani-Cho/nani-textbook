@@ -498,6 +498,7 @@ li{
   position: fixed;
   left: 20px;
   top: 20px;
+  cursor: pointer;
   z-index: 9999;
 }
 @media screen and (max-width: 768px) {
