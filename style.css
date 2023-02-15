@@ -21,6 +21,7 @@
 }
 
 .chinese [class$="-item"] .heading3,
+.chinese .t-item::after,
 .chinese .p-item .cover::after{
  background: var(--chinese-light);
 }
@@ -37,6 +38,7 @@
 }
 
 .math [class$="-item"] .heading3,
+.math .t-item::after,
 .math .p-item .cover::after{
  background: var(--math-light);
 }
@@ -52,6 +54,7 @@
   content: "南一數學教材簡介本";
 }
 .english [class$="-item"] .heading3,
+.english .t-item::after,
 .english .p-item .cover::after{
  background: var(--english-light);
 }
@@ -67,6 +70,7 @@
   content: "南一英文教材簡介本";
 }
 .science [class$="-item"] .heading3,
+.science .t-item::after,
 .science .p-item .cover::after{
  background: var(--science-light);
 }
@@ -82,6 +86,7 @@
   content: "南一自然教材簡介本";
 }
 .society [class$="-item"] .heading3,
+.society .t-item::after,
 .society .p-item .cover::after{
  background: var(--society-light);
 }
@@ -97,6 +102,8 @@
   content: "南一社會教材簡介本";
 }
 .technology [class$="-item"] .heading3,
+.technology .t-item::after,
+.technology .t-item::after,
 .technology .p-item .cover::after{
  background: var(--technology-light);
 }
@@ -115,6 +122,7 @@
   content: "南一科技教材簡介本";
 }
 .comprehensive [class$="-item"] .heading3,
+.comprehensive .t-item::after,
 .comprehensive .p-item .cover::after{
  background: var(--comprehensive-light);
 }
@@ -134,6 +142,7 @@
   content: "南一綜合教材架構本";
 }
 .healthandsports [class$="-item"] .heading3,
+.healthandsports .t-item::after,
 .healthandsports .p-item .cover::after{
  background: var(--healthandsports-light);
 }
@@ -282,6 +291,10 @@ a{
 }
 img{
   width: 100%;
+}
+ol,ul{
+  padding-left: 20px;
+
 }
 
 li{
@@ -487,6 +500,12 @@ li{
   top: 20px;
   z-index: 9999;
 }
+@media screen and (max-width: 768px) {
+  .menu{
+    width: 35px;
+  height: 35px;
+  }
+  }
 .nav-link{
   display: inline-flex;
   align-items: center;
@@ -541,6 +560,14 @@ li{
     margin-left: 0;
     padding: 50px 30px;
   }
+  .mainBlock .logo{
+  width: 200px;
+}
+ .mainBlock .heading2{
+  font-size: 20px;
+  padding: 0 20px;
+  min-width: 320px;
+ }
 }
 @media screen and (max-width: 540px) {
   .mainBlock{
@@ -572,7 +599,7 @@ li{
   margin-bottom: 2rem;
   gap: 2rem;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 601px) {
 .textbook{
   max-width: 900px;
   height: 450px;
@@ -584,26 +611,32 @@ li{
 }
 
 @media screen and (max-width: 1024px) {
-  .textbook{
+  /* .textbook{
 
     padding: 10px 50px 0;
 
-  }
+  } */
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .textbook{
-    max-height: 400px;
+    /* max-height: 400px; */
 
-    padding: 10px 50px 0;
+    /* padding: 0; */
 
   }
+ .title{
+    flex-direction: column;
+    margin-top: 60px;
+  }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   .textbook{
     flex-direction: column;
     max-height: unset;
+    position: relative;
+    gap: 80px;
 
-    padding: 10px 50px 0;
+    
 
   }
 }
@@ -621,7 +654,7 @@ li{
   
   
 }
-@media screen and (min-width: 1025px) {
+/* @media screen and (min-width: 1025px) { */
   .textbook::before{
     
     
@@ -631,18 +664,34 @@ li{
   transform: rotate(-4deg);
 
 }
-}
-@media screen and (max-width: 1024px) {
+/* } */
+@media (min-width: 769px) and (max-width: 960px) {
   .textbook::before{
-    top: 25px;
-    right: 90px;
+    top: 20px;
+    right: 120px;
 
   }
 }
 @media screen and (max-width: 768px) {
   .textbook::before{
-    top: 35px;
-    right: 75px;
+    top: 40px;
+    right: 150px;
+
+  }
+}
+@media screen and (max-width: 600px) {
+  .textbook::before{
+    top: 360px;
+    right: 50%;
+
+    font-size: 24px;
+    padding: 10px;
+    line-height: 1;
+
+    word-break: keep-all;
+    position: absolute;
+    z-index: 99;
+    transform: translateX(50%);
 
   }
 }
@@ -660,24 +709,66 @@ li{
   left: 0;
   z-index: -99;
 }
+@media screen and (max-width:768px) {
+  .textbook::after{
+    max-width: 90%;
+    left: 5%;
+  }
+}
 
 .textbook-cover{
   width: 16rem;
-  /* position: relative;
-  top: -40px; */
 }
-@media screen and (min-width:651px) {
-  .textbook-cover{
+@media screen and (min-width:601px) {
+  .t-item{
 
     position: relative;
     top: -40px;
   }
 }
+@media screen and (max-width:600px) {
+  .textbook-cover{
+
+    width: 280px;
+  }
+  .textbook::after{
+    content: none;
+  }
+  .t-item{
+    margin-top: 20px;
+    position: relative;
+  }
+  .t-item::after,
+.t-item::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-10px, 20px);
+  width: calc(100% + 20px);
+  height: calc(100% - 10px);
+  
+  background: var(--bg-light);
+  border: 1px solid #000000;
+  z-index: -99;
+
+  
+}
+.t-item::after{
+  top: 10px;
+  left: 10px;
+  z-index: -100;
+}
+}
 .content{
   font-size: 1.5rem;
   line-height: 2.5rem;
 }
-
+.textbook ol, .textbook li{
+  width: 90%;
+  min-width: 300px;
+  font-size:  18px;
+}
 
 /* PDF */
 .p-item{
@@ -802,33 +893,33 @@ padding: 10px 40px;
 /* s-buttonList */
 .s-buttonList{
   position: absolute;
-  top: 65px;
-  right: 65px;
+  top: 20px;
+  right: 20px;
   grid-template-columns: repeat(1, 1fr);
   background: #488A68;
-  border: 2px solid #FFFFFF;
+  /* border: 2px solid #FFFFFF; */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  width: 90px;
-  height: 90px;
+  /* width: 90px; */
+  /* height: 90px; */
   overflow: hidden;
   transition: all .3s;
   transform-origin: top right ;
-   
+   height: 90px;
   
 }
 
 
 .s-buttonList:hover{
-  height: 438px;
+  height: 405px;
 }
 
 .s-button{
 
+  height: 45px;
   cursor: pointer;
   /* border-radius: 4px; */
   font-weight: 900;
   font-size: 30px;
-  line-height: 43px;
   background: #ccc;
   display: flex;
   justify-content: center;
@@ -840,16 +931,27 @@ padding: 10px 40px;
 .s-button.active{
   width: 90px;
   height: 90px;
-grid-area: 1 / 1;
-pointer-events: none;
+  grid-area: 1 / 1;
+  pointer-events: none;
 }
-
+@media screen and (max-width: 1024px) {
+  .s-buttonList{
+    height: 75px;
+  }
+  .s-buttonList:hover{
+    height: 675px;
+  }
+  .s-button.active{
+    width: 75px;
+    height: 75px;
+  }
+}
 @media screen and (max-width: 768px) {
   .s-buttonList{
     right: 20px;
     top: 20px;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
   }
   .s-button{
     font-size: 16px;
