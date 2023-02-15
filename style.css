@@ -292,10 +292,7 @@ a{
 img{
   width: 100%;
 }
-ol,ul{
-  padding-left: 20px;
 
-}
 
 li{
   font-size: 1.25rem;
@@ -310,15 +307,15 @@ li{
 }
 .b-items{
   
-  width: 28.125rem;
-  height: 15rem;
+  width: 20rem;
+  height: 12rem;
 }
 
 .b-item {
   position: absolute;
   margin: 0;
-  width: 28.125rem;
-  height: 15rem;
+  width: 20rem;
+  height: 12rem;
   display: inline-block;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -343,6 +340,15 @@ li{
 .b-item.right {
   margin-left:  300px !important;
 }
+
+@media screen and (max-width: 768px) {
+  .b-item.left{
+    margin-left:  -100px !important;
+  }
+.b-item.right {
+  margin-left:  100px !important;
+}
+}
 .b-item.back {
   /* margin-left: 2em !important; */
   opacity: .05;
@@ -359,6 +365,7 @@ li{
   transform: translateX(-50%);
   display: flex;
   justify-content: space-between;
+  z-index: 9999;
 }
 
 .b-btn img{
@@ -382,12 +389,12 @@ li{
   left: 0;
   width: 100vw;
   transition: 1s;
-  bottom: -250px;
   z-index: 3200;
+  bottom: -150px;
 }
 .root:hover{
 
-  bottom: 0;
+  /* bottom: 0; */
 }
 
 .container {
@@ -428,8 +435,10 @@ li{
 /* Main Subject */
 .sbjList{
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 20px;
+  padding-left: 20px;
 }
 
 .sbjList li{
@@ -438,6 +447,7 @@ li{
   align-items: center;
   border: 1px solid #525252;
   word-break: keep-all;
+  margin-bottom: 0;
   
 }
 .sbjList li:first-child{

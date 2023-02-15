@@ -15,7 +15,11 @@ $('.menu').click(function() {
 
 $('.r-item .heading3').click(function() {
     $(this).toggleClass('active')
+});
 
 
 
+$('.subject').click(function() {
+    console.log('test')
+    window.location('/chinese/textbook.html')
 });

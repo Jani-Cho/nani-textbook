@@ -17,6 +17,16 @@ const slides = [
 "./src/國中健體8上課本.jpg",
 ];
 
+// const slides = [
+//   ["./src/國中社會7上課本.jpg","sco"]
+//   ["./src/國中科技8上課本.jpg","technology"]
+//   ["./src/國中國文7上課本.jpg","chinese"]
+//   ["./src/國中綜合8上課本.jpg","ch"]
+//   ["./src/國中數學7上課本.jpg","ch"]
+// ["./src/國中自然7上課本.jpg","ch"]
+// ["./src/國中健體8上課本.jpg","ch"]
+// ];
+
 
 function Carousel({ degrees, diameter }) {
   const slidesRef = useRef([]);
