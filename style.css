@@ -440,6 +440,13 @@ li{
   word-break: keep-all;
   
 }
+.sbjList li:first-child{
+  background: #0E173D;
+  color: #fff;
+  border: 0;
+  padding: 0 10px;
+  
+}
 .sbjList li a{
   padding: 5px 15px;
 
