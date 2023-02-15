@@ -12,3 +12,10 @@ $('.menu').click(function() {
 
 
 });
+
+$('.r-item .heading3').click(function() {
+    $(this).toggleClass('active')
+
+
+
+});

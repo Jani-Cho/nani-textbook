@@ -774,16 +774,27 @@ li{
   padding: 40px;
   font-size: 1.5rem;
   line-height: 2.5rem;
+
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+.active + .content{
+  padding: 40px;
+  height: auto;
 }
 @media screen and (max-width:960px) {
   .content{
     padding: 20px;
   }
 }
-.textbook ol, .textbook li{
-  width: 90%;
-  min-width: 300px;
-  font-size:  18px;
+.textbook li{
+  max-width: 90%;
+  min-width: 350px;
+  list-style:none;
+  text-align: center;
+  font-size:  32px;
+  line-height: 1.5;
 }
 
 /* PDF */
@@ -889,6 +900,15 @@ padding: 20px 40px;
 
 }
 
+.r-item .heading3::after{
+content: "+";
+font-size: 30px;
+margin-left: 10px;
+}
+.r-item .heading3.active::after{
+  content: "−";
+  font-size: 30px;
+}
 @media screen and (max-width: 768px) {
   .r-item .heading3{
     padding:  10px 15px;
