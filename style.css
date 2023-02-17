@@ -105,6 +105,10 @@
 .society .textbook::before{
   content: "南一社會教材簡介本";
 }
+.society .s-label.active,
+.society .s-label:hover{
+  background-color: var(--society);
+}
 .technology [class$="-item"] .heading3,
 .technology .t-item::after,
 .technology .t-item::after,
