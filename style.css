@@ -134,10 +134,7 @@
   background-image: url('./src/textbook/textbook-bg-com.png');
 }
 .comprehensive .textbook::before{
-  content: "南一綜合教材簡介本";
-}
-.comprehensive .textbook.snd::before{
-  content: "南一綜合教材架構本";
+  content: "112綜合教材簡介本";
 }
 .healthandsports [class$="-item"] .heading3,
 .healthandsports .t-item::after,
