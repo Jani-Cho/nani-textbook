@@ -153,11 +153,9 @@
   background-image: url('./src/textbook/textbook-bg-hs.png');
 }
 .healthandsports .textbook::before{
-  content: "南一健體教材簡介本";
+  content: "112健體教材簡介本";
 }
-.healthandsports .textbook.snd::before{
-  content: "南一健體教材架構本";
-}
+
 .digital [class$="-item"] .heading3,
 .digital .p-item .cover::after{
  background: var(--digital-light);
