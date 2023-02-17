@@ -903,7 +903,10 @@ border: 1px solid #000000;
 padding: 20px 40px;
 
 }
-
+.r-item .heading3{
+  display: flex;
+  justify-content: space-between;
+}
 .r-item .heading3::after{
 content: "+";
 font-size: 30px;
