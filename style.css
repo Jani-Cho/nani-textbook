@@ -85,6 +85,10 @@
 .science .textbook::before{
   content: "南一自然教材簡介本";
 }
+.science .s-label.active,
+.science .s-label:hover{
+  background-color: var(--science);
+}
 .society [class$="-item"] .heading3,
 .society .t-item::after,
 .society .p-item .cover::after{
@@ -940,6 +944,7 @@ margin-left: 10px;
   
 }
 
+.m-item .content *,
 .m-item .content iframe{
   max-width: 100%;
   min-width: 50%;
@@ -1026,4 +1031,20 @@ margin-left: 10px;
     width: 45px;
     height: 45px;
   }
+}
+
+.tab,
+.tab + div{
+  display: none;
+}
+
+.tab:checked +div{
+  display: block;
+}
+
+.s-label{
+  padding: 10px 40px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50px;
 }

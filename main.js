@@ -16,6 +16,10 @@ $('.menu').click(function() {
 $('.r-item .heading3').click(function() {
     $(this).toggleClass('active')
 });
+$('.s-label').click(function() {
+    $('.s-label').removeClass('active')
+    $(this).addClass('active')
+});
 
 
 
