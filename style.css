@@ -116,11 +116,9 @@
   background-image: url('./src/textbook/textbook-bg-tech.png');
 }
 .technology .textbook::before{
-  content: "南一科技教材簡介本";
+  content: "112科技教材簡介本";
 }
-.technology .textbook.snd::before{
-  content: "南一科技教材簡介本";
-}
+
 .comprehensive [class$="-item"] .heading3,
 .comprehensive .t-item::after,
 .comprehensive .p-item .cover::after{
