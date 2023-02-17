@@ -777,7 +777,8 @@ li{
   padding: 40px;
   font-size: 1.5rem;
   line-height: 2.5rem;
-
+}
+.r-item .content{
   height: 0;
   overflow: hidden;
   padding: 0;
@@ -934,6 +935,11 @@ margin-left: 10px;
   background: var(--bg-light);
   border: 1px solid #000000;
   
+}
+
+.m-item .content iframe{
+  max-width: 100%;
+  min-width: 50%;
 }
 @media screen and (max-width: 768px) {
   .m-item .content div,
