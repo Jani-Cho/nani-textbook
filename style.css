@@ -381,13 +381,17 @@ li{
 
 
 /* Subjects Carousel */
+#root{
+  width: 100vw;
+  overflow: hidden;
+}
 .root {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  /* align-items: center; */
+  /* display: flex; */
+  /* justify-content: center; */
   height: 25rem;
-  position: fixed;
-  left: 0;
+  /* position: fixed; */
+  /* left: 0; */
   width: 100vw;
   transition: 1s;
   z-index: 3200;
