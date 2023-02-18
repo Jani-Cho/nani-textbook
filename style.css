@@ -1113,32 +1113,10 @@ margin-left: 10px;
   overflow: hidden;
 }
 
-@media screen and (max-height: 600px) {
-  .home h1{
-    display: none;
+@media screen and (max-height: 768px) {
+  body.home{
+    height: auto;
+    overflow-y: scroll;
   }
-  .sbjList{
-    gap: 10px;
-  }
-  .sbTitle,
-  .sbjList li a{
-    padding:  5px;
-    font-size: 16px;
-  }
-}
 
-@media screen and (max-height: 540px) {
-  .home .banner{
-    display: none;
-  }
-}
-@media screen and (max-height: 375px) {
-  .home .box{
-    display: none;
-  }
-  .sbTitle,
-  .sbjList li a{
-    padding:  5px;
-    font-size: 20px;
-  }
 }
