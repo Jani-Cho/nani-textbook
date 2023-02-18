@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="zh-tw" >
+<html lang="zh-tw">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,83 +14,90 @@
   <link rel="stylesheet" href="./style.css">
 
 </head>
-<body class="flex column a-c" style="height: 100vh; width: 100vw; overflow: hidden;">
+
+<body class="flex column a-c home" >
   <section class="t-c">
     <img class="n-logo" src="../src/logo.png" alt="">
     <h1>南一教材新視界</h1>
   </section>
- <section class="banner">
-  <ul class="b-items">
-    <li class="b-item main" id="1">
-      <a href="">
-        <img src="./src/國文.png" />
-      </a>
+  <section class="banner">
+    <ul class="b-items">
+      <li class="b-item main" id="1">
+        <a href="">
+          <img src="./src/國文.png" />
+        </a>
 
-    </li>
-    <li class="b-item right" id="2">
-      <a href="">
-        <img src="./src/英語.png" />
-      </a>
-    </li>
-    <li class="b-item back" id="3">
-      <a href="">
-        <img src="./src/數學.png" />
-      </a>
-    </li>
-    <li class="b-item back" id="4">
-      <a href="">
-        <img src="./src/自然.png" />
-      </a>
-    </li>
-    <li class="b-item left" id="5">
-      <a href="">
-        <img src="./src/社會.png" />
-      </a>
-    </li>
- 
-
+      </li>
+      <li class="b-item right" id="2">
+        <a href="">
+          <img src="./src/英語.png" />
+        </a>
+      </li>
+      <li class="b-item back" id="3">
+        <a href="">
+          <img src="./src/數學.png" />
+        </a>
+      </li>
+      <li class="b-item back" id="4">
+        <a href="">
+          <img src="./src/自然.png" />
+        </a>
+      </li>
+      <li class="b-item left" id="5">
+        <a href="">
+          <img src="./src/社會.png" />
+        </a>
+      </li>
 
 
-  </ul>
-  <div class="b-btn">
-    <img src="./src/b-left.png" alt="" id="prev">
-    <img src="./src/b-right.png" alt="" id="next">
-   
-  </div>
-</section> 
-<section>
 
-  <div class="flex a-c mb-20">
 
-    <h4 class="sbTitle">所有科目</h4>
-    <ul class="sbjList">
-      <li class="s-btn"><a href="./chinese/textbook.html" >國文</a></li>
-      <li class="s-btn"><a href="./english/textbook.html">英文</a></li>
-      <li class="s-btn"><a href="./math/textbook.html">數學</a></li>
-      <li class="s-btn"><a href="./society/textbook.html">社會</a></li>
-      <li class="s-btn"><a href="./science/textbook.html">自然</a></li>
-      <li class="s-btn"><a href="./technology/textbook.html">科技</a></li>
-      <li class="s-btn"><a href="./healthandsports/textbook.html">健體</a></li>
-      <li class="s-btn"><a href="./comprehensive/textbook.html">綜合</a></li>
-      <li class="s-btn"><a href="./digital/onebook.html">數位</a></li>
     </ul>
+    <div class="b-btn">
+      <img src="./src/b-left.png" alt="" id="prev">
+      <img src="./src/b-right.png" alt="" id="next">
+
+    </div>
+  </section>
+  <section class="sbBtns">
+
+    <div class="flex sm-column j-c a-c mb-20 gap-20">
+
+      <h4 class="sbTitle">所有科目</h4>
+      <ul class="sbjList ">
+        <li class="s-btn"><a href="./chinese/textbook.html">國文</a></li>
+        <li class="s-btn"><a href="./english/textbook.html">英文</a></li>
+        <li class="s-btn"><a href="./math/textbook.html">數學</a></li>
+        <li class="s-btn"><a href="./society/textbook.html">社會</a></li>
+        <li class="s-btn"><a href="./science/textbook.html">自然</a></li>
+        <li class="s-btn"><a href="./technology/textbook.html">科技</a></li>
+        <li class="s-btn"><a href="./healthandsports/textbook.html">健體</a></li>
+        <li class="s-btn"><a href="./comprehensive/textbook.html">綜合</a></li>
+        <li class="s-btn"><a href="./digital/onebook.html">數位</a></li>
+      </ul>
+    </div>
+    <div class="flex sm-column a-c mb-20 gap-20">
+      <h4 class="sbTitle">官方網站</h4>
+      <ul class="sbjList co">
+        <li class="s-btn"><a href="https://onebook.oneclass.com.tw/">OneBook電子書城</a></li>
+        <li class="s-btn"><a href="https://onebox2.oneclass.com.tw/">OneBox2.0 資源下載</a></li>
+        <li class="s-btn"><a hfer="https://tks.nani.com.tw/">南一雲端出題</a></li>
+      </ul>
+    </div>
+  </section>
+  <div class="box">
+
+    <div id="root" class="mb-none"></div>
+    <div id="phone" class="pc-none"></div>
   </div>
-  <div class="flex a-c">
-    <h4 class="sbTitle">官方網站</h4>
-    <ul class="sbjList">
-      <li class="s-btn"><a href="https://onebook.oneclass.com.tw/">OneBook電子書城</a></li>
-      <li class="s-btn"><a href="https://onebox2.oneclass.com.tw/">OneBox2.0 資源下載</a></li>
-      <li class="s-btn"><a hfer="https://tks.nani.com.tw/">南一雲端出題</a></li>
-    </ul>
-  </div>
-</section>
-<div id="root"></div>
   <script type="module" src="./script.js"></script>
-  
+
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src='https://github.com/mattbryson/TouchSwipe-Jquery-Plugin/blob/master/jquery.touchSwipe.min.js'></script><script  src="./script.js"></script>
+  <script src='https://github.com/mattbryson/TouchSwipe-Jquery-Plugin/blob/master/jquery.touchSwipe.min.js'></script>
+  <script src="./script.js"></script>
   <script src="./banner.js"></script>
   <script src="./main.js"></script>
 
 </body>
+
 </html>

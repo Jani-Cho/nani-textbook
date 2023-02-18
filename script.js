@@ -115,3 +115,6 @@ function Carousel({ degrees, diameter }) {
 ReactDOM.render( /*#__PURE__*/
 React.createElement(Carousel, { degrees: 15, diameter: 1600 }),
 document.getElementById("root"));
+ReactDOM.render( /*#__PURE__*/
+React.createElement(Carousel, { degrees: 10, diameter: 1600 }),
+document.getElementById("phone"));
