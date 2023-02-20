@@ -67,7 +67,7 @@
   background-image: url('./src/textbook/textbook-bg-eng.png');
 }
 .english .textbook::before{
-  content: "南一英文教材簡介本";
+  content: "南一英語教材簡介本";
 }
 .science [class$="-item"] .heading3,
 .science .t-item::after,
@@ -505,15 +505,18 @@ li{
   word-break: keep-all;
   
 }
-.sbjList li a{
+.sbjList li {
   padding: 5px 15px;
 
 }
-.s-btn:hover{
+.s-btn:not(.disabled):hover{
   border: 1px solid #FF6666;
   color: #fff;
   background: #FF6666;
   cursor: pointer;
+}
+.s-btn.disabled{
+  background: #a9a9a9;
 }
 
 /* Sidebar */
