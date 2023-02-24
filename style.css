@@ -873,13 +873,14 @@ li{
   margin-bottom: 20px;
 }
 .r-item .content{
-  height: 0;
+  height: auto;
+  max-height: 0;
   overflow: hidden;
   padding: 0;
+  transition: all 1s;
 }
 .active + .content{
-  padding: 40px;
-  height: auto;
+  max-height: 5000px;
 }
 @media screen and (max-width:960px) {
   .content{
