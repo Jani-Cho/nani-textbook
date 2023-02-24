@@ -27,7 +27,7 @@ const pageChange = (e, page) => {
             <router-link class="nav-link" to="/chinese/features"><i class="fa-solid fa-screwdriver-wrench"></i>電子書特色功能</router-link>
             <router-link class="nav-link" to="/chinese/media"><i class="fa-solid fa-photo-film"></i>精彩多媒體</router-link>
            
-            <a class="nav-link" href="#"><i class="fa-solid fa-swatchbook"></i> 電子書體驗版</a>
+            <a class="nav-link" href="#"><i class="fa-solid fa-swatchbook"></i> 電子書體驗</a>
             <a class="nav-link" href="#"><i class="fa-solid fa-puzzle-piece"></i>數位線上文宣</a>
 
         </nav>
