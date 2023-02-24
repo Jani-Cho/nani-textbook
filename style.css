@@ -1044,7 +1044,8 @@ margin-left: 10px;
 }
 
 
-.s-buttonList:hover{
+/* .s-buttonList:hover{ */
+.s-buttonList{
   height: 180px;
 }
 
@@ -1073,7 +1074,8 @@ margin-left: 10px;
   .s-buttonList{
     height: 75px;
   }
-  .s-buttonList:hover{
+  /* .s-buttonList:hove{ */
+  .s-buttonList{
     height: 165px;
   }
   .s-button.active{
@@ -1088,7 +1090,8 @@ margin-left: 10px;
     width: 45px;
     height: 45px;
   }
-  .s-buttonList:hover{
+  /* .s-buttonList:hover{ */
+  .s-buttonList{
     height: 135px;
   }
   .s-button{
