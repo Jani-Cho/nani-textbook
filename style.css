@@ -1023,13 +1023,17 @@ margin-left: 10px;
 .m-item, .f-item{
   margin-bottom: 40px;
 }
-.m-item .content,
+/* .m-item .content, */
 .f-item .content{
   background: var(--bg-light);
   border: 1px solid #000000;
   
 }
-
+.m-item .heading3{
+  background: none!important;
+  border: none;
+  font-size: 32px;
+}
 .m-item .content *,
 .m-item .content iframe{
   max-width: 100%;
