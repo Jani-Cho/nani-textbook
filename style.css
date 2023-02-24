@@ -29,7 +29,7 @@
 	url(https://cdn.jsdelivr.net/gh/marsnow/open-huninn-font@1.1/font/jf-openhuninn.svg#SealmemoryHeader) format("svg"); /* Legacy iOS */
 }
 
-.chinese [class$="-item"] .heading3,
+.chinese [class$="-item"] .heading3
 .chinese .t-item::after,
 .chinese .s-button,
 .chinese .p-item .cover::after{
@@ -123,7 +123,10 @@
 .society .s-label:hover{
   background-color: var(--society);
 }
-.technology [class$="-item"] .heading3,
+.technology [class$="-item"] .heading3{
+  background: #d1e2ff;
+
+}
 .technology .t-item::after,
 .technology .s-button,
 .technology .p-item .cover::after{
@@ -141,7 +144,9 @@
   content: "112科技教材簡介本";
 }
 
-.comprehensive [class$="-item"] .heading3,
+.comprehensive [class$="-item"] .heading3{
+  background: #f1e6ea;
+}
 .comprehensive .t-item::after,
 .comprehensive .s-button,
 .comprehensive .p-item .cover::after{
@@ -159,7 +164,9 @@
 .comprehensive .textbook::before{
   content: "112綜合教材簡介本";
 }
-.healthandsports [class$="-item"] .heading3,
+.healthandsports [class$="-item"] .heading3{
+  background: #e0f6ff;
+}
 .healthandsports .t-item::after,
 .healthandsports .s-button,
 .healthandsports .p-item .cover::after{
@@ -678,7 +685,7 @@ li{
 @media screen and (max-width: 540px) {
   .mainBlock{
 
-    padding: 0 15px;
+    padding: 0 20px;
 
   }
 }
@@ -882,16 +889,17 @@ li{
 }
 .r-item{
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .r-item .content{
   height: auto;
   max-height: 0;
   overflow: hidden;
   padding: 0;
-  transition: all 1s;
+  transition: all .7s;
 }
 .active + .content{
-  max-height: 5000px;
+  max-height: 3000px;
 }
 @media screen and (max-width:960px) {
   .content{
@@ -958,6 +966,7 @@ li{
 @media screen and (max-width: 540px) {
   .p-item.pdf img {
     width: 360px;
+    max-width: 90%;
   }
   .s-button:hover{
     top: 45px;
@@ -1006,7 +1015,8 @@ li{
 [class$="-item"] .heading3{
   /* background: #A1C2B1; */
 border: 1px solid #000000;
-padding: 20px 40px;
+padding: 10px 25px;
+border-radius: 10px;
 
 }
 .r-item .heading3{
@@ -1022,9 +1032,22 @@ margin-left: 10px;
   content: "−";
   font-size: 30px;
 }
+.r-item .content > div{
+  padding: 40px;
+}
 @media screen and (max-width: 768px) {
   .r-item .heading3{
     padding:  10px 15px;
+    font-size: 20px;
+  }
+  .r-item .content div{
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .r-item .heading3{
+    padding:  10px 15px;
+    font-size: 18px;
   }
 }
 
@@ -1182,4 +1205,34 @@ margin-left: 10px;
   border-radius: 20px;
   margin-bottom: 15px;
   font-size: 16px;
+}
+
+.feak{
+  position: relative;
+}
+
+.feak::before{
+  content: '獨家';
+  font-size: 18px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #e65534;
+  color: #fff;
+  left: -25px;
+  top: -25px;
+  transform: rotate(-15deg);
+}
+@media screen and (max-width: 560px) {
+  .feak::before{
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+    left: -15px;
+    top: -20px;
+  }
 }
