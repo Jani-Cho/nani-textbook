@@ -327,7 +327,11 @@ li{
 }
 
 /* Banner */
-
+.banner{
+  width: 75vw;
+  min-height: 320px;
+  overflow-x: hidden;
+}
 .wrapper{
   width:100%;
   padding-top: 20px;
@@ -338,22 +342,33 @@ li{
 .carousel{
   max-width:800px;
   margin:0px auto;
+  /* overflow: hidden; */
 }
 .slick-slide{
   margin:10px;
 }
 .slick-slide img{
-  width:100%;
+  width: 320px;
+  margin: auto;
   border: 2px solid #fff;
 }
 .wrapper .slick-dots li button:before {
   font-size: 10px;
   color:white;
 }
+.slick-next{
+  right: 20px;
+  z-index: 100000;
+}
+.slick-prev{
+  left: 20px;
+  z-index: 100000;
+}
 .slick-prev:before,
 .slick-next:before{
   content: '▵';
   transform: rotate(-90deg);
+
 } 
 
 .slick-next:before{
@@ -361,8 +376,9 @@ li{
 }
 .slick-prev:before, .slick-next:before{
   font-family: unset;
-  border: 1px solid grey;
-  color: grey;
+  border: 1px solid #333;
+  background: #ffffff90;
+  color: #333;
   width: 30px;
   font-size: 22px;
   height: 30px;
@@ -372,24 +388,34 @@ li{
 }
 .slick-list{
   overflow: unset;
+  width: 90%;
+    margin: auto;
+}
+.slick-track{
+  position: relative;
 }
 .slick-slide{
   transition: transform .3s;
+  opacity: 0.3;
+  z-index: 9999;
+  position: relative;
+
 }
-.slick-current + .slick-slide{
-  transform: scale(1.5);
-  width: 320px;
+.slick-center{
   z-index: 10000;
+  transform: scale(1.35);
+  opacity: 1;
 }
+
 .wrapper .slick-dots li button:before{
   color: grey;
 }
 
-.slick-slide{
-  opacity: 0;
-}
-.slick-slide.slick-active{
-  opacity: 1;
+@media screen and (max-width: 1200px) {
+  .banner{
+    width: 90vw;
+  }
+
 }
 /* Subjects Carousel */
 #root{
