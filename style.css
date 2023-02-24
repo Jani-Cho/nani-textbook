@@ -328,93 +328,69 @@ li{
 
 /* Banner */
 
-.banner {
-  margin: 10px auto;
-  position: relative;
-}
-.b-items{
-  
-  width: 20rem;
-  height: 170px;
+.wrapper{
+  width:100%;
+  padding-top: 20px;
+  text-align:center;
+  margin: 30px 0;
 }
 
-.b-item {
-  position: absolute;
-  margin: 0;
-  width: 20rem;
-  /* height: 170px; */
-  display: inline-block;
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  overflow: hidden;
+.carousel{
+  max-width:800px;
+  margin:0px auto;
+}
+.slick-slide{
+  margin:10px;
+}
+.slick-slide img{
+  width:100%;
+  border: 2px solid #fff;
+}
+.wrapper .slick-dots li button:before {
+  font-size: 10px;
+  color:white;
+}
+.slick-prev:before,
+.slick-next:before{
+  content: '▵';
+  transform: rotate(-90deg);
+} 
+
+.slick-next:before{
+  transform: rotate(90deg);
+}
+.slick-prev:before, .slick-next:before{
+  font-family: unset;
+  border: 1px solid grey;
+  color: grey;
+  width: 30px;
+  font-size: 22px;
+  height: 30px;
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 50%;
+}
+.slick-list{
+  overflow: unset;
+}
+.slick-slide{
+  transition: transform .3s;
+}
+.slick-current + .slick-slide{
+  transform: scale(1.5);
+  width: 320px;
+  z-index: 10000;
+}
+.wrapper .slick-dots li button:before{
+  color: grey;
 }
 
-.b-item.main {
-  z-index: 3000;
+.slick-slide{
+  opacity: 0;
 }
-
-.b-item.left,
-.b-item.right {
-  opacity: .3;
-  margin-left: -250px !important;
-  z-index: 1000;
-  -webkit-transform: scale(.75);
-  -moz-transform: scale(.75);
-  transform: scale(.75);
-}
-
-.b-item.right {
-  margin-left:  250px !important;
-}
-
-@media screen and (max-width: 768px) {
-  .b-item.left{
-    margin-left:  -150px !important;
-  }
-.b-item.right {
-  margin-left:  150px !important;
-}
-}
-@media screen and (max-width: 560px) {
-  .b-item.left{
-    margin-left:  -70px !important;
-  }
-.b-item.right {
-  margin-left:  70px !important;
-}
-}
-.b-item.back {
-  /* margin-left: 2em !important; */
-  opacity: .05;
-  -webkit-transform: scale(.5);
-  -moz-transform: scale(.5);
-  transform: scale(.5);
-}
-
-.b-btn{
-  width: 90vw;
-  max-width: 900px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%);
-  display: flex;
-  justify-content: space-between;
-  z-index: 9999;
-}
-
-.b-btn img{
-  width: 35px;
-  opacity: 0.6;
-}
-
-.b-btn img:hover{
+.slick-slide.slick-active{
   opacity: 1;
-  cursor: pointer;
 }
-
-
 /* Subjects Carousel */
 #root{
   width: 100vw;
