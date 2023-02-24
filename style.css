@@ -224,11 +224,22 @@
 body.home{
   width: 100vw; 
   overflow-x: hidden;
-  opacity: 0;
   transition: opacity 2s;
- }
-body.home.active{
+}
+body.home::after{
+  content: '';
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #fff;
   opacity: 1;
+  transition: .5s;
+}
+body.home.active::after{
+  pointer-events: none;
+  opacity: 0;
 }
 
 .flex{
