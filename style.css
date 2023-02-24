@@ -14,7 +14,7 @@
   --science-light: #C6DF80;
   --society-light: #C1D6FF;
   --technology-light: #7AA1E4;
-  --comprehensive-light: #ffd9e8;
+  --comprehensive-light: #f5c4d8;
   --healthandsports-light: #B6E8FD;
   --digital-light: #D698DE;
   --bg-light: #fff8e8;
@@ -31,6 +31,7 @@
 
 .chinese [class$="-item"] .heading3,
 .chinese .t-item::after,
+.chinese .s-button,
 .chinese .p-item .cover::after{
  background: var(--chinese-light);
 }
@@ -48,6 +49,7 @@
 
 .math [class$="-item"] .heading3,
 .math .t-item::after,
+.math .s-button,
 .math .p-item .cover::after{
  background: var(--math-light);
 }
@@ -64,6 +66,7 @@
 }
 .english [class$="-item"] .heading3,
 .english .t-item::after,
+.english .s-button,
 .english .p-item .cover::after{
  background: var(--english-light);
 }
@@ -80,6 +83,7 @@
 }
 .science [class$="-item"] .heading3,
 .science .t-item::after,
+.science .s-button,
 .science .p-item .cover::after{
  background: var(--science-light);
 }
@@ -100,6 +104,7 @@
 }
 .society [class$="-item"] .heading3,
 .society .t-item::after,
+.society .s-button,
 .society .p-item .cover::after{
  background: var(--society-light);
 }
@@ -120,7 +125,7 @@
 }
 .technology [class$="-item"] .heading3,
 .technology .t-item::after,
-.technology .t-item::after,
+.technology .s-button,
 .technology .p-item .cover::after{
  background: var(--technology-light);
 }
@@ -138,6 +143,7 @@
 
 .comprehensive [class$="-item"] .heading3,
 .comprehensive .t-item::after,
+.comprehensive .s-button,
 .comprehensive .p-item .cover::after{
  background: var(--comprehensive-light);
 }
@@ -155,6 +161,7 @@
 }
 .healthandsports [class$="-item"] .heading3,
 .healthandsports .t-item::after,
+.healthandsports .s-button,
 .healthandsports .p-item .cover::after{
  background: var(--healthandsports-light);
 }
@@ -171,6 +178,7 @@
 }
 
 .digital [class$="-item"] .heading3,
+.digital .s-button,
 .digital .p-item .cover::after{
  background: var(--digital-light);
 }
@@ -395,6 +403,7 @@ li{
   height: 30px;
   display: inline-flex;
   justify-content: center;
+  align-items: center;
   border-radius: 50%;
 }
 .slick-list{
@@ -513,15 +522,15 @@ li{
   
 }
 .sbTitle{
-  background: #0E173D;
+  background: #333;
   color: #fff;
   padding: 10px;
   word-break: keep-all;
-  
+  border-radius: 5px;
 }
 .sbjList li {
   padding: 5px 15px;
-
+  border-radius: 5px;
 }
 .s-btn:not(.disabled):hover{
   border: 1px solid #FF6666;
@@ -856,6 +865,9 @@ li{
   font-size: 1.5rem;
   line-height: 2.5rem;
 }
+.r-item{
+  margin-bottom: 20px;
+}
 .r-item .content{
   height: 0;
   overflow: hidden;
@@ -1146,7 +1158,8 @@ margin-left: 10px;
 .tag{
   background: #fff;
   display: inline-block;
-  padding: 3px 40px;
+  padding: 10px 40px;
   border-radius: 20px;
   margin-bottom: 15px;
+  font-size: 16px;
 }
