@@ -223,9 +223,13 @@
 }
 body.home{
   width: 100vw; 
-  overflow-x: hidden
+  overflow-x: hidden;
+  opacity: 0;
+  transition: opacity 2s;
  }
-
+body.home.active{
+  opacity: 1;
+}
 
 .flex{
   display: flex;

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   $('.carousel').slick({
   slidesToShow: 1,
   infinite: true,
@@ -24,14 +25,11 @@ $(document).ready(function(){
 
     },
   ]
-  });
-});
+  })
 
-$(".carousel").on("init", function (event, slick) {
-  var numSlides = slick.slideCount;
-  console.log(numSlides);
-});
 
-$('.carousel').slick('getSlick').slideCount
+
+  $("body.home").addClass('active')
+});
 
 // Slick version 1.5.8
