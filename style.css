@@ -229,6 +229,7 @@
  }
 }
 body.home{
+  justify-content: flex-start;
   width: 100vw; 
   overflow-x: hidden;
   transition: opacity 2s;
