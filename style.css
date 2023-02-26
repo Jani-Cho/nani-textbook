@@ -580,6 +580,7 @@ li{
   height: 100vh;
   text-align: center;
   z-index: 10000;
+  overflow-y: scroll;
 }
 
 
