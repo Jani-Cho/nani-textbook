@@ -8,24 +8,15 @@ import { motion } from "https://cdn.skypack.dev/framer-motion@4.1.17";
 import cx from "https://cdn.skypack.dev/classnames@2.3.1";
 
 const slides = [
-  "./src/國中社會7上課本.jpg",
-  "./src/國中科技8上課本.jpg",
-  "./src/國中國文7上課本.jpg",
-  "./src/國中綜合8上課本.jpg",
-  "./src/國中數學7上課本.jpg",
-"./src/國中自然7上課本.jpg",
-"./src/國中健體8上課本.jpg",
+  {"textbook":"./src/國中社會7上課本.jpg", "url": "./society/textbook.html"},
+  {"textbook":"./src/國中科技8上課本.jpg", "url": "./technology/textbook.html"},
+  {"textbook":"./src/國中國文7上課本.jpg", "url": "./chinese/textbook.html"},
+  {"textbook":"./src/國中綜合8上課本.jpg", "url": "./comprehensive/textbook.html"},
+  {"textbook":"./src/國中數學7上課本.jpg", "url": "./meth/textbook.html"},
+{"textbook":"./src/國中自然7上課本.jpg", "url": "./science/textbook.html"},
+{"textbook":"./src/國中健體8上課本.jpg", "url": "./healthandsports/textbook.html"},
 ];
 
-// const slides = [
-//   ["./src/國中社會7上課本.jpg","sco"]
-//   ["./src/國中科技8上課本.jpg","technology"]
-//   ["./src/國中國文7上課本.jpg","chinese"]
-//   ["./src/國中綜合8上課本.jpg","ch"]
-//   ["./src/國中數學7上課本.jpg","ch"]
-// ["./src/國中自然7上課本.jpg","ch"]
-// ["./src/國中健體8上課本.jpg","ch"]
-// ];
 
 
 function Carousel({ degrees, diameter }) {
@@ -82,6 +73,7 @@ function Carousel({ degrees, diameter }) {
 
     React.createElement("div", { className: "subjects-container" },
     slides.map((slide, index) => {
+      // links.map((link, IDX) => {
       const isActive = active === index;
       const rotate = (index - centerIndex) * degrees;
       const divider = slideWidth / degrees;
@@ -102,7 +94,11 @@ function Carousel({ degrees, diameter }) {
           onAnimationStart: () => setIsDragging(true),
           onAnimationComplete: () => setIsDragging(false) }, /*#__PURE__*/
 
-        React.createElement("img", { src: slide, alt: "" })));
+          React.createElement("a", { href: slide.url }),
+        React.createElement("img", { src: slide.textbook, alt: "" })
+          )
+          );
+        // })
 
 
     }))))));

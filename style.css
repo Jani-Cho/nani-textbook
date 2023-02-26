@@ -1236,3 +1236,12 @@ margin-left: 10px;
     top: -20px;
   }
 }
+
+.c-btn{
+  font-size: 20px;
+  border-radius: 3px;
+  padding: 5px;
+  cursor: pointer;
+  opacity: .5;
+
+}

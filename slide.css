@@ -1,0 +1,140 @@
+.boxTest{
+    width: 100vw;
+    height: 300px;
+    overflow: hidden;
+}
+  .subjects-container {
+    /* position: absolute; */
+    /* left: 50%; */
+    /* bottom: 0px; */
+    transform-origin: 50% 1800px;
+    will-change: transform;
+    transition: 1s;
+  }
+  .subjects-container .textBox {
+    position: absolute;
+    height: 100vh;
+    transform-origin: 120px 1800px;
+  }
+  .subjects-container .textBox:nth-child(0) {
+    transform: rotate(0deg);
+  }
+  .subjects-container .textBox:nth-child(1) {
+    transform: rotate(10deg);
+  }
+  .subjects-container .textBox:nth-child(2) {
+    transform: rotate(20deg);
+  }
+  .subjects-container .textBox:nth-child(3) {
+    transform: rotate(30deg);
+  }
+  .subjects-container .textBox:nth-child(4) {
+    transform: rotate(40deg);
+  }
+  .subjects-container .textBox:nth-child(5) {
+    transform: rotate(50deg);
+  }
+  .subjects-container .textBox:nth-child(6) {
+    transform: rotate(60deg);
+  }
+  .subjects-container .textBox:nth-child(7) {
+    transform: rotate(70deg);
+  }
+  .subjects-container .textBox:nth-child(8) {
+    transform: rotate(80deg);
+  }
+  .subjects-container .textBox:nth-child(9) {
+    transform: rotate(90deg);
+  }
+  .subjects-container .textBox:nth-child(10) {
+    transform: rotate(100deg);
+  }
+  .subjects-container .textBox:nth-child(11) {
+    transform: rotate(110deg);
+  }
+  .subjects-container .textBox:nth-child(12) {
+    transform: rotate(120deg);
+  }
+  .subjects-container .textBox:nth-child(13) {
+    transform: rotate(130deg);
+  }
+  .subjects-container .textBox:nth-child(14) {
+    transform: rotate(140deg);
+  }
+  .subjects-container .textBox:nth-child(15) {
+    transform: rotate(150deg);
+  }
+  .subjects-container .textBox:nth-child(16) {
+    transform: rotate(160deg);
+  }
+  .subjects-container .textBox:nth-child(17) {
+    transform: rotate(170deg);
+  }
+  .subjects-container .textBox:nth-child(18) {
+    transform: rotate(180deg);
+  }
+  .subjects-container .textBox:nth-child(19) {
+    transform: rotate(190deg);
+  }
+  .subjects-container .textBox:nth-child(20) {
+    transform: rotate(200deg);
+  }
+  .subjects-container .textBox:nth-child(21) {
+    transform: rotate(210deg);
+  }
+  .subjects-container .textBox:nth-child(22) {
+    transform: rotate(220deg);
+  }
+  .subjects-container .textBox:nth-child(23) {
+    transform: rotate(230deg);
+  }
+  .subjects-container .textBox:nth-child(24) {
+    transform: rotate(240deg);
+  }
+  .subjects-container .textBox:nth-child(25) {
+    transform: rotate(250deg);
+  }
+  .subjects-container .textBox:nth-child(26) {
+    transform: rotate(260deg);
+  }
+  .subjects-container .textBox:nth-child(27) {
+    transform: rotate(270deg);
+  }
+  .subjects-container .textBox:nth-child(28) {
+    transform: rotate(280deg);
+  }
+  .subjects-container .textBox:nth-child(29) {
+    transform: rotate(290deg);
+  }
+  .subjects-container .textBox:nth-child(30) {
+    transform: rotate(300deg);
+  }
+  .subjects-container .textBox:nth-child(31) {
+    transform: rotate(310deg);
+  }
+  .subjects-container .textBox:nth-child(32) {
+    transform: rotate(320deg);
+  }
+  .subjects-container .textBox:nth-child(33) {
+    transform: rotate(330deg);
+  }
+  .subjects-container .textBox:nth-child(34) {
+    transform: rotate(340deg);
+  }
+  .subjects-container .textBox:nth-child(35) {
+    transform: rotate(350deg);
+  }
+  .subjects-container .textBox:nth-child(36) {
+    transform: rotate(360deg);
+  }
+  .subjects-container .textBox div {
+    width: 240px;
+    height: 300px;
+    border-radius: 5px;
+  }
+  .subjects-container .textBox div img {
+    width: 100%;
+    object-fit: cover;
+    border: 10px solid transparent;
+    transition: border 0.3s ease-out;
+  }
