@@ -552,8 +552,13 @@ li{
   border-radius: 5px;
 }
 .sbjList li {
-  padding: 5px 15px;
+  /* padding: 5px 15px; */
+  min-width: 72px;
+  height: 32px;
   border-radius: 5px;
+}
+.sbjList li a{
+  padding: 0 15px;
 }
 .s-btn:not(.disabled):hover{
   border: 1px solid #FF6666;
