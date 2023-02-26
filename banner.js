@@ -3,7 +3,7 @@ $(document).ready(function(){
   $('.carousel').slick({
   slidesToShow: 1,
   infinite: true,
-
+  autoplay: true,
   slidesToScroll: 1,
   centerMode: true,
   centerPadding: '20px',

@@ -78,7 +78,7 @@ import sideBar from '../components/sideBar.vue'
   }
 }
 
-.gap-40{
+.gap-30{
   gap: 40px;
 }
 .column{

@@ -105,7 +105,7 @@ const pageChange = (e, page) => {
   }
 }
 
-.gap-40{
+.gap-30{
   gap: 40px;
 }
 .column{

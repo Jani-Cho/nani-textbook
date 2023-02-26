@@ -291,13 +291,16 @@ body.home.active::after{
 .gap-20{
   gap: 20px;
 }
-.gap-40{
-  gap: 40px;
+.gap-30{
+  gap: 30px;
 }
 .column{
   flex-direction: column;
 }
 @media screen and (max-width: 560px) {
+  .gap-30{
+    gap: 15px;
+  }
   .sm-column{
     flex-direction: column;
   }
@@ -353,7 +356,12 @@ p{
   margin-bottom: 20px;
 
 }
-
+@media screen and (max-width: 768px) {
+  p{
+    font-size: 18px;
+    line-height: 2.125rem;
+  }
+}
 a{
 
   text-decoration: none;
@@ -577,7 +585,7 @@ li{
   top: 0;
   padding-top: 50px;
   width: 230px;
-  height: 100vh;
+  height: 105vh;
   text-align: center;
   z-index: 10000;
   overflow-y: scroll;
@@ -591,7 +599,7 @@ li{
 
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
   .sidebar{
     left: -100%;
     transition: all 1s ease;
@@ -605,7 +613,7 @@ li{
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 1025px) {
   .menu{
     display: none;
   }
@@ -667,7 +675,7 @@ li{
 .mainBlock .logo{
   width: 15rem;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
   .mainBlock{
     width: 100vw;
     margin-left: 0;
@@ -684,7 +692,7 @@ li{
   width: 200px;
 }
  .mainBlock .heading2{
-  font-size: 20px;
+  font-size: 17px;
   padding: 0 20px;
   min-width: 320px;
  }
@@ -696,11 +704,17 @@ li{
 
   }
 }
+@media screen and (max-height: 750px) and  (max-width: 960px){
+  .mainBlock{
+    justify-content: center;
+    padding: 40px 0;
+  }
+}
 
 .heading1{
-  font-size: 3rem;
-  line-height: 69px;
-  margin-bottom: 1.25rem;
+  font-size: 2.4rem;
+  line-height: 1.35;
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 540px) {
   .heading1{
@@ -709,6 +723,7 @@ li{
 
   }
 }
+
 .heading2{
   font-size: 1.6rem;
   font-weight: 600;
@@ -724,46 +739,36 @@ li{
 }
 .title{
   max-width: 900px;
-  margin-bottom: 2rem;
+  margin-bottom: 10px;
   gap: 2rem;
 }
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 960px) {
 .textbook{
-  max-width: 900px;
-  height: 450px;
+  max-width: calc(100vw - 300px);
   gap: 50px;
-  margin-top: 2rem;
+  margin-top: 60px;
   padding: 10px 100px 0;
   position: relative;
 }
 }
 
-@media screen and (max-width: 1024px) {
-  /* .textbook{
-
-    padding: 10px 50px 0;
-
-  } */
-}
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 959px) {
   .textbook{
-    /* max-height: 400px; */
-
-    /* padding: 0; */
+    max-width: calc(100vw - 100px);
 
   }
  .title{
     flex-direction: column;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-bottom: 0;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 959px) {
   .textbook{
     flex-direction: column;
     max-height: unset;
     position: relative;
-    gap: 80px;
+    gap: 50px;
 
     
 
@@ -789,7 +794,7 @@ li{
     
     position: absolute;
     top: 0;
-    right: 150px;
+    right: 135px;
   transform: rotate(-4deg);
 
 }
@@ -808,7 +813,7 @@ li{
 
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 959px) {
   .textbook::before{
     top: 360px;
     right: 50%;
@@ -838,7 +843,7 @@ li{
   left: 0;
   z-index: -99;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:959px) {
   .textbook::after{
     max-width: 90%;
     left: 5%;
@@ -846,16 +851,16 @@ li{
 }
 
 .textbook-cover{
-  width: 16rem;
+  width: 14rem;
 }
-@media screen and (min-width:601px) {
+@media screen and (min-width:960px) {
   .t-item{
 
     position: relative;
-    top: -40px;
+    top: -60px;
   }
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:959px) {
   .textbook-cover{
 
     width: 280px;
@@ -897,6 +902,7 @@ li{
 .r-item{
   margin-bottom: 20px;
   cursor: pointer;
+  max-width: calc(90vw - 250px);
 }
 .r-item .content{
   height: auto;
@@ -908,7 +914,20 @@ li{
 .active + .content{
   max-height: 4000px;
 }
+.r-item .content .mb-40:not(.flex-col-2) > img{
+  width: 90%;
+}
+.r-item .content .mb-40.flex-col-2 > img{
+  width: 45%;
+  flex: none;
+}
+@media screen and (max-width:1024px) {
+  .r-item{
+    max-width: 85vw;
+  }
+}
 @media screen and (max-width:960px) {
+
   .content{
     padding: 20px;
   }
@@ -921,7 +940,11 @@ li{
   font-size:  32px;
   line-height: 1.5;
 }
-
+@media screen and (max-width:960px) {
+  .textbook li{
+    font-size: 28px;
+  }
+}
 /* PDF */
 .p-item{
   height: auto;
@@ -943,7 +966,7 @@ li{
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
+  left: -10px;
   width: 100%;
   height: calc(100% - 10px);
   
@@ -954,7 +977,7 @@ li{
 }
 .p-item .cover::after{
   top: 10px;
-  left: 10px;
+  left: 0;
   z-index: -100;
   
   /* background: #75BDC4; */
@@ -973,7 +996,7 @@ li{
 @media screen and (max-width: 540px) {
   .p-item.pdf img {
     width: 360px;
-    max-width: 90%;
+    width: calc(90vw - 80px);
   }
   .s-button:hover{
     top: 45px;
@@ -1010,8 +1033,9 @@ li{
     max-width: 80%;
   }
   .p-item .cover::after, .p-item .cover::before{
-    width: calc(100% + 10px);
-  }
+    width: calc(90vw - 60px);
+
+}
   .p-item.video .cover::after, .p-item.video .cover::before{
     width: 85%;
     left: 7.5%;
@@ -1043,12 +1067,16 @@ margin-left: 10px;
   padding: 40px;
 }
 @media screen and (max-width: 768px) {
+  [class$="-item"] .heading3{
+    padding: 5px 15px;
+  }
   .r-item .heading3{
     padding:  10px 15px;
     font-size: 20px;
   }
   .r-item .content div{
-    padding: 20px;
+    margin: 0;
+    padding: 10px 0;
   }
 }
 @media screen and (max-width: 560px) {
@@ -1068,6 +1096,13 @@ margin-left: 10px;
 /* Features & Media */
 .m-item, .f-item{
   margin-bottom: 40px;
+  width: calc(90vw - 200px);
+}
+@media screen and (max-width: 1024px) {
+  .m-item, .f-item{
+    width: calc(100vw - 20px);
+  }
+
 }
 /* .m-item .content, */
 .f-item .content{
@@ -1078,11 +1113,11 @@ margin-left: 10px;
 .m-item .heading3{
   background: none!important;
   border: none;
-  font-size: 32px;
+  font-size: 24px;
 }
 .m-item .content *,
 .m-item .content iframe{
-  max-width: 100%;
+  width: 100%;
   min-width: 50%;
 }
 @media screen and (max-width: 768px) {
