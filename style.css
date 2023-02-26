@@ -900,7 +900,7 @@ li{
   transition: all .7s;
 }
 .active + .content{
-  max-height: 3000px;
+  max-height: 3500px;
 }
 @media screen and (max-width:960px) {
   .content{
@@ -1245,4 +1245,25 @@ margin-left: 10px;
   cursor: pointer;
   opacity: .5;
 
+}
+
+.not-yet{
+  position: relative;
+}
+.not-yet a{
+  cursor: auto;
+
+}
+.not-yet img{
+
+  opacity: 0.3;
+}
+.not-yet::after{
+  content: "Coming Soon";
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  top: 150px;
+  text-align: center;
+  font-size: 20px;
 }
