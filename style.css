@@ -1120,6 +1120,15 @@ margin-left: 10px;
   width: 100%;
   min-width: 50%;
 }
+.disciption.nowrap{
+  font-size: 16px;
+  text-align: center;
+}
+.disciption.nowrap *{
+  width: unset;
+  display: inline-flex;
+  min-width: unset;
+}
 @media screen and (max-width: 768px) {
   .m-item .content div,
   .f-item .content div{
